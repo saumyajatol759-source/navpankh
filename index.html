@@ -1,4 +1,4 @@
-
+<!doctype html>
 <html lang="hi">
 <head>
   <meta charset="utf-8" />
@@ -31,7 +31,6 @@
       line-height:1.5;
     }
 
-    /* Container */
     .container{ max-width:1100px; margin:0 auto; padding:28px; }
 
     /* Header / Nav */
@@ -46,7 +45,6 @@
     nav a{ color:var(--white); text-decoration:none; font-weight:600; font-size:14px; opacity:0.95; }
     .cta-btn{ background: linear-gradient(90deg,var(--primary), #13c0ff); color:#00121a; padding:10px 14px; border-radius:10px; font-weight:700; border:none; cursor:pointer; box-shadow: 0 6px 20px rgba(0,191,255,0.08); }
 
-    /* Mobile nav */
     .menu-toggle{ display:none; background:transparent; border:1px solid rgba(255,255,255,0.04); padding:8px; border-radius:10px; color:var(--white); }
     @media (max-width:880px){
       nav ul{ display:none; position:absolute; right:20px; top:72px; background:var(--card); padding:12px; border-radius:12px; box-shadow:0 8px 30px rgba(0,0,0,0.6); flex-direction:column; }
@@ -55,30 +53,18 @@
     }
 
     /* Hero */
-    .hero{
-      display:grid;
-      grid-template-columns: 1fr 420px;
-      gap:28px;
-      align-items:center;
-      padding:46px 0;
-    }
+    .hero{ display:grid; grid-template-columns: 1fr 420px; gap:28px; align-items:center; padding:46px 0; }
     .hero-left h2{ font-size:36px; margin:0 0 14px 0; letter-spacing: -0.5px;}
     .hero-left p{ color:var(--muted); margin:0 0 18px 0; font-size:16px; max-width:680px;}
     .kpis{ display:flex; gap:12px; margin-top:14px; }
     .kpi{ background:var(--glass); padding:8px 12px; border-radius:10px; text-align:center; }
     .kpi strong{ display:block; font-size:18px; color:var(--primary); }
 
-    .hero-right{
-      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-      border-radius:16px;
-      padding:18px;
-      border: 1px solid rgba(0,191,255,0.06);
-      box-shadow: 0 10px 30px rgba(2,6,23,0.6);
-    }
+    .hero-right{ background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:16px; padding:18px; border: 1px solid rgba(0,191,255,0.06); box-shadow: 0 10px 30px rgba(2,6,23,0.6); }
     .hero-card h3{ margin:0 0 8px 0; }
     .hero-card p{ margin:0 0 12px 0; color:var(--muted); font-size:14px; }
 
-    /* Sections */
     section{ padding:32px 0; border-top:1px solid rgba(255,255,255,0.02); }
     .grid{ display:grid; grid-template-columns: repeat(2,1fr); gap:20px; }
     .card{ background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); padding:18px; border-radius:12px; border:1px solid rgba(255,255,255,0.03); }
@@ -91,33 +77,10 @@
       .brand h1{ font-size:16px; }
     }
 
-    /* Footer */
     footer{ padding:24px 0; color:var(--muted); font-size:14px; border-top:1px solid rgba(255,255,255,0.02); margin-top:24px; }
 
-    /* Buttons & inputs */
     .btn{ background:var(--primary); color:#00121a; padding:10px 12px; border-radius:10px; border:none; cursor:pointer; font-weight:700; }
-    input, textarea, select{ width:100%; padding:10px 12px; border-radius:8px; background:rgba(255,255,255,0.02); color:var(--white); border:1px solid rgba(255,255,255,0.04); outline:none; }
-    label{ display:block; margin-bottom:6px; font-weight:600; color:var(--muted); font-size:13px; }
-
-    /* Modal */
-    .modal-backdrop{ position:fixed; inset:0; display:flex; align-items:center; justify-content:center; background:rgba(2,6,23,0.6); z-index:200; visibility:hidden; opacity:0; transition:all .25s ease; }
-    .modal-backdrop.open{ visibility:visible; opacity:1; }
-    .modal{ width:100%; max-width:520px; background: linear-gradient(180deg,#07101a,#0b1b29); padding:20px; border-radius:12px; border:1px solid rgba(0,191,255,0.06); }
-    .modal h3{ margin-top:0; }
-    .close-btn{ background:transparent; border:1px solid rgba(255,255,255,0.04); color:var(--white); padding:6px 8px; border-radius:8px; cursor:pointer; }
-
-    /* small utilities */
-    .muted{ color:var(--muted); }
-    .center{ text-align:center; }
-    .chip{ display:inline-block; padding:6px 10px; background:rgba(255,255,255,0.02); border-radius:999px; font-weight:600; color:var(--primary); border:1px solid rgba(0,191,255,0.06); }
-
-    /* footer links */
-    .socials{ display:flex; gap:12px; }
-    .socials a{ color:var(--muted); text-decoration:none; font-weight:700; }
-
-    /* subtle hover */
     a:hover, .btn:hover, .cta-btn:hover{ filter:brightness(1.06); transform:translateY(-1px); transition: all .18s ease; }
-
   </style>
 </head>
 <body>
@@ -139,8 +102,6 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#webinars">Webinars</a></li>
-            <li><a href="#courses">Courses</a></li>
-            <li><a href="#contact">Contact</a></li>
             <li><button class="cta-btn" id="openRegister">Register</button></li>
           </ul>
         </nav>
@@ -163,7 +124,6 @@
 
         <div style="margin-top:18px;">
           <button class="btn" id="registerBtn">Register for Webinar</button>
-          <button class="btn" style="background:transparent;border:1px solid rgba(255,255,255,0.06); color:var(--white); margin-left:8px;" id="learnMore">Learn More</button>
         </div>
       </div>
 
@@ -204,65 +164,13 @@
           <h4>Intermediate: Robotics & Coding</h4>
           <p class="small">Microcontrollers, sensors, simple robot programming with Python/C++ and real-world projects.</p>
         </div>
-
         <div class="card">
           <h4>Advanced: AI & Autonomy</h4>
           <p class="small">Computer vision for drones, path planning, autonomy basics and industry case studies.</p>
         </div>
-
         <div class="card">
           <h4>Special: Industry Case Study</h4>
           <p class="small">Amazon drone delivery & Mars Rover analysis — how industry deploys drones/robots at scale.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- COURSES -->
-    <section id="courses">
-      <h3 style="margin:0 0 12px 0">Courses</h3>
-      <div class="grid">
-        <div class="card">
-          <h4>Robotics Foundations</h4>
-          <p class="small">Electronics basics, motors, sensors, and starter kits.</p>
-        </div>
-        <div class="card">
-          <h4>Drone Piloting</h4>
-          <p class="small">Flight mechanics, safety rules, and hands-on simulators.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact">
-      <h3>Contact / Join Us</h3>
-      <div style="display:grid; grid-template-columns: 1fr 360px; gap:20px; margin-top:12px;">
-        <div class="card">
-          <form id="contactForm" onsubmit="return false;">
-            <label for="name">Name</label>
-            <input id="name" name="name" type="text" placeholder="Aapka naam" required />
-
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" placeholder="example@domain.com" required />
-
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Aapka message..." required></textarea>
-
-            <div style="margin-top:10px; display:flex; gap:8px;">
-              <button class="btn" id="sendMsg">Send Message</button>
-              <button type="reset" class="close-btn">Reset</button>
-            </div>
-          </form>
-        </div>
-
-        <div class="card">
-          <h4>Address</h4>
-          <p class="small">Online Platform — India</p>
-          <h4 style="margin-top:12px;">Follow Us</h4>
-          <div class="socials" style="margin-top:8px;">
-            <a href="#" aria-label="YouTube">YouTube</a>
-            <a href="#" aria-label="Instagram">Instagram</a>
-            <a href="#" aria-label="LinkedIn">LinkedIn</a>
-          </div>
         </div>
       </div>
     </section>
@@ -280,43 +188,32 @@
         <h3 id="modalTitle">Webinar Registration</h3>
         <button class="close-btn" id="closeModal">Close</button>
       </div>
-
       <p class="small">Register karne ke liye apne details bharen. Hum aapko webinar link bhejenge.</p>
-
       <form id="registerForm" onsubmit="return false;" style="margin-top:12px;">
         <label for="rname">Full Name</label>
         <input id="rname" required />
-
         <label for="remail" style="margin-top:8px;">Email</label>
         <input id="remail" type="email" required />
-
         <label for="rlevel" style="margin-top:8px;">Experience Level</label>
         <select id="rlevel">
           <option>Beginner</option>
           <option>Intermediate</option>
           <option>Advanced</option>
         </select>
-
         <div style="margin-top:12px; display:flex; gap:8px;">
           <button class="btn" id="submitRegister">Submit</button>
           <button class="close-btn" id="cancelModal">Cancel</button>
         </div>
-
         <p id="regMsg" class="muted" style="margin-top:10px; display:none;"></p>
       </form>
     </div>
   </div>
 
   <script>
-    // Basic interactivity: menu toggle, modal open/close, form handling
     const menuToggle = document.getElementById('menuToggle');
     const mainNav = document.getElementById('mainNav');
+    menuToggle.addEventListener('click', ()=> { mainNav.classList.toggle('open'); });
 
-    menuToggle.addEventListener('click', ()=> {
-      mainNav.classList.toggle('open');
-    });
-
-    // Modal controls
     const openRegisterBtns = document.querySelectorAll('#openRegister, #openRegister2, #registerBtn');
     const modalBackdrop = document.getElementById('modalBackdrop');
     const closeModalBtn = document.getElementById('closeModal');
@@ -334,30 +231,17 @@
       document.getElementById('regMsg').style.display = 'none';
     }
 
-    openRegisterBtns.forEach(b => {
-      b && b.addEventListener('click', openModal);
-    });
-
+    openRegisterBtns.forEach(b => { b && b.addEventListener('click', openModal); });
     closeModalBtn.addEventListener('click', closeModal);
     cancelModalBtn.addEventListener('click', closeModal);
+    modalBackdrop.addEventListener('click', (e) => { if(e.target === modalBackdrop) closeModal(); });
 
-    modalBackdrop.addEventListener('click', (e) => {
-      if(e.target === modalBackdrop) closeModal();
-    });
-
-    // Registration form submit (fake, client-side only)
     document.getElementById('submitRegister').addEventListener('click', (e) => {
       e.preventDefault();
       const name = document.getElementById('rname').value.trim();
       const email = document.getElementById('remail').value.trim();
-      if(!name || !email){
-        showRegMsg('Please fill name and valid email.');
-        return;
-      }
-
-      // Show success message (replace with actual API call)
+      if(!name || !email){ showRegMsg('Please fill name and valid email.'); return; }
       showRegMsg('Registration successful! Check your email for the webinar link.', true);
-      // Optional: push data to server here
     });
 
     function showRegMsg(msg, success=false){
@@ -365,35 +249,9 @@
       el.style.display = 'block';
       el.textContent = msg;
       el.style.color = success ? 'lightgreen' : 'var(--muted)';
-      if(success){
-        setTimeout(() => {
-          closeModal();
-        }, 1800);
-      }
+      if(success){ setTimeout(() => { closeModal(); }, 1800); }
     }
-
-    
-    document.getElementById('sendMsg').addEventListener('click', (e) => {
-      e.preventDefault();
-      const name = document.getElementById('name').value.trim();
-      const email = document.getElementById('email').value.trim();
-      const message = document.getElementById('message').value.trim();
-      if(!name || !email || !message){
-        alert('Please fill all fields to send message.');
-        return;
-      }
-      alert('Message sent! We will contact you soon.');
-      document.getElementById('contactForm').reset();
-    });
-
-    // smooth scroll for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
-      anchor.addEventListener('click', function(e){
-        const target = document.querySelector(this.getAttribute('href'));
-        if(target){ e.preventDefault(); target.scrollIntoView({behavior:'smooth', block:'start'}); }
-      });
-    });
-
   </script>
 </body>
 </html>
+
